@@ -14,6 +14,7 @@
 
 <script type="text/javascript">
 $(document).ready(function(){
+
 	$('#popover_button').popoverx({
 		// html:true,
 		title:'popoverx',
@@ -26,7 +27,7 @@ $(document).ready(function(){
 		onShown:function(){
 			$('#test').html('test');
 		},
-		fire_on:'dbclick',
+		fire_on:'click',
 		ondepend:'body'
 	});
 
@@ -53,13 +54,17 @@ $(document).ready(function(){
 	body{
 		height: 600px;
 	}
+	#div1{
+		margin-top: 500px;
+
+	}
 </style>
 </head>
 <body>
 <br>
 <br>
 <br>
-	<div align='left'>
+	<div align='left' id="div1">
 	<buttion id="popover_button" class="btn btn-secondary" title="浮动弹出框" data-content="">popoverx浮动弹出框</buttion>
 	</div>
 	<div align='right'>
